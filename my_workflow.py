@@ -18,7 +18,7 @@ def show_stars(github_repos: list[str]):
     stars = get_stars.map(repo_stats).result()
 
     # Print the result
-    for repo, star_count in stars.items():
+    for repo, star_count in zip(github_repos, stars):
         print(f"{repo}: round 2 - {star_count} stars")
 
 
