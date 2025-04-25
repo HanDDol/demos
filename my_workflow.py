@@ -19,7 +19,7 @@ def show_stars(github_repos: list[str]):
 
     # Print the result
     for repo, star_count in stars.items():
-        print(f"{repo}: {star_count} stars")
+        print(f"{repo}: round 2 - {star_count} stars")
 
 
 @task(
